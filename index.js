@@ -56,7 +56,7 @@ app.post('/send-email', async (req, res) => {
         res.status(500).json({ error: 'Error sending email' });
     }
 });
-
+ 
 app.post('/send-email-v2', async (req, res) => {
     try {
         const { recipientEmail, subject, body } = req.body;
